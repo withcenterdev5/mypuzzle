@@ -45,6 +45,7 @@ class AppState extends ChangeNotifier {
   bool get isNumber => _isNumbered;
 
   List<String> get numberedArray {
+    /// ERROR everytime numberedArray called it is being rebuilt by List.generate
     final newList = List.generate(
       _grid * _grid,
       (index) => "${index + 1}",
