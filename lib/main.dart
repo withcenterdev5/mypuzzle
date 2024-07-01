@@ -45,7 +45,7 @@ class _MyAppState extends State<MyApp> {
               ),
               ElevatedButton(
                 onPressed: () {
-                  // state.shuffle();
+                  state.shuffle();
                   state.setIsActive(value: true);
                 },
                 child: const Text('Play'),
